@@ -20,8 +20,10 @@ const sauceRoutes = require('./routes/sauce');
 const app = express();
 
 // Connection à la base de données.
-mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", true);
 mongoose.connect('mongodb+srv://sam:aX3AJ0yyENztp0yR@cluster0.rbfmyck.mongodb.net/?retryWrites=true&w=majority',
+// sam:aX3AJ0yyENztp0yR
+
 { useNewUrlParser: true,
   useUnifiedTopology: true })
 .then(() => console.log('Connexion à MongoDB réussie !'))

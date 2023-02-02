@@ -1,12 +1,11 @@
 
-
 //  Récupération du modèle de sauce.
 const Sauce = require('../models/Sauce');
 
 //  Récupération du module "File system".
 //  Node fs permet aux développeurs de créer et gérer des fichiers pour y stocker ou lire des fichiers dans un programme Node.
 const fs = require('fs');
-const { findOne } = require('../models/User');
+// const { findOne } = require('../models/User');
 
 //  Création d'une nouvelle sauce 
 // Cont^rolleur de la route POST.
